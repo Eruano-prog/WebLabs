@@ -108,12 +108,13 @@ section pre {
 
 .game-list li img, .movie-list li img {
     max-width: 100px;
+    max-height: 140px;
     border-radius: 5px;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.game-list li span, .movie-list li span {
-    display: block;
+.game-list li div, .movie-list li div {
+    max-width: 100px;
     margin-top: 5px;
     font-size: 14px;
 }
@@ -125,11 +126,6 @@ footer {
     text-align: center;
 }
 
-footer div {
-    display: inline-block;
-    text-align: left;
-}
-
 footer h3 {
     margin-bottom: 10px;
 }
@@ -137,6 +133,7 @@ footer h3 {
 footer div {
     display: block;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 footer a {
