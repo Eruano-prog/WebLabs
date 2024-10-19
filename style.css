@@ -6,47 +6,57 @@ body {
     color: #333;
 }
 
-header {
+.header {
     background-color: #0073e6;
     color: white;
     padding: 10px 20px;
 }
 
-nav {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.header__logo {
     font-size: 18px;
     margin-right: 20px;
 }
 
-.nav-links a {
+.header__logo--dark {
+    background-color: #333;
+    color: white;
+}
+
+.header__logo--light {
+    background-color: white;
+    color: #333;
+}
+
+.header__nav-links__link {
     font-size: 18px;
     margin-right: 20px;
     color: white;
     text-decoration: none;
 }
 
-.nav-links a:hover {
+.header__nav-links__link--active {
     text-decoration: underline;
 }
 
-.search-form {
+.header__search-form {
     display: flex;
     align-items: center;
 }
 
-.search-form input[type="text"] {
+.header__search-form__input {
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 3px;
     margin-right: 10px;
 }
 
-.search-form button {
+.header__search-form__button {
     padding: 5px 10px;
     border: none;
     background-color: #0073e6;
@@ -55,23 +65,23 @@ nav {
     cursor: pointer;
 }
 
-.search-form button:hover {
+.header__search-form__button:hover {
     background-color: #005bb5;
 }
 
-main {
+.main {
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.content {
+.main__content {
     display: flex;
     flex-direction: column;
     flex: 2;
 }
 
-section {
+.section {
     background-color: white;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -80,13 +90,13 @@ section {
     flex: 1;
 }
 
-section h3 {
+.section__title {
     border-bottom: 2px solid #0073e6;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-section pre {
+.section__pre {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     padding: 10px;
@@ -101,51 +111,51 @@ section pre {
     margin: 0;
 }
 
-.game-list li, .movie-list li {
+.game-list__item, .movie-list__item {
     margin-right: 20px;
     text-align: center;
 }
 
-.game-list li img, .movie-list li img {
+.game-list__item-img, .movie-list__item-img {
     max-width: 100px;
     max-height: 140px;
     border-radius: 5px;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.game-list li div, .movie-list li div {
+.game-list__item-text, .movie-list__item-text {
     max-width: 100px;
     margin-top: 5px;
     font-size: 14px;
 }
 
-footer {
+.footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-footer h3 {
+.footer__title {
     margin-bottom: 10px;
 }
 
-footer div {
+.footer__text {
     display: block;
     margin-bottom: 5px;
     text-align: left;
 }
 
-footer a {
+.footer__link {
     color: #0073e6;
     text-decoration: none;
 }
 
-footer a:hover {
+.footer__link:hover {
     text-decoration: underline;
 }
 
-aside {
+.aside {
     background-color: white;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -154,40 +164,40 @@ aside {
     flex: 1;
 }
 
-aside h3 {
+.aside__title {
     border-bottom: 2px solid #0073e6;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-aside ul {
+.aside__list {
     list-style: none;
     padding: 0;
 }
 
-aside ul li {
+.aside__list-item {
     margin-bottom: 10px;
 }
 
-aside ul li a {
+.aside__list-item-link {
     color: #0073e6;
     text-decoration: none;
 }
 
-aside ul li a:hover {
+.aside__list-item-link:hover {
     text-decoration: underline;
 }
 
 @media (min-width: 800px) {
-    main {
+    .main {
         flex-direction: row;
     }
 
-    .content {
+    .main__content {
         flex: 3;
     }
 
-    aside {
+    .aside {
         flex: 1;
         margin-bottom: 0;
         margin-left: 20px;
