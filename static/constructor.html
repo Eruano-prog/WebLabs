@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ToWatch List Constructor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../scripts/towatch.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <div class="header__logo header__logo--light">
+            **Logo**
+        </div>
+        <div class="header__nav-links">
+            <a href="index.html" class="header__nav-links__link">Home</a>
+            <a href="games.html" class="header__nav-links__link">Games</a>
+            <a href="movies.html" class="header__nav-links__link">Movies</a>
+            <a href="constructor.html" class="header__nav-links__link header__nav-links__link--active">ToWatch</a>
+        </div>
+        <form action="#" method="get" class="header__search-form">
+            <input type="text" name="search" placeholder="Search..." class="header__search-form__input">
+            <button type="submit" class="header__search-form__button">Search</button>
+        </form>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="main__content">
+        <section class="section">
+            <h1 class="section__title">ToWatch List Constructor</h1>
+            <form id="towatch-form" class="form">
+                <label for="title" class="form__label">Movie Title:</label>
+                <input type="text" id="title" name="title" class="form__input" required>
+
+                <label for="genre" class="form__label">Genre:</label>
+                <input type="text" id="genre" name="genre" class="form__input" required>
+
+                <label for="priority" class="form__label">Priority (1-10):</label>
+                <input type="number" id="priority" name="priority" class="form__input" min="1" max="10" required>
+
+                <button type="submit" class="form__button">Add Movie</button>
+            </form>
+
+            <div id="list-container" class="list-container">
+                <table class="towatch-table">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Priority</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="towatch-list">
+                    <!-- Movies will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div>
+        <h3 class="footer__title">Follow us</h3>
+        <div class="footer__text"><a href="index.html" class="footer__link">Telegram</a></div>
+        <div class="footer__text"><a href="index.html" class="footer__link">VK</a></div>
+    </div>
+</footer>
+</body>
+</html>
