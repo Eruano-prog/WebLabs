@@ -2,7 +2,6 @@
     const form = document.getElementById('towatch-form');
     const listContainer = document.getElementById('towatch-list');
 
-    // Load saved list from localStorage
     const savedMovies = JSON.parse(localStorage.getItem('toWatchList')) || [];
     savedMovies.forEach(addMovieRow);
 

@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta http-equiv="refresh" content="0; url=/static/index.html">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <title>RuCritic</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-<p>If you are not redirected automatically, follow this <a href="/static/index.html">link</a>.</p>
+<header class="header">
+    <nav class="header__nav">
+        <div class="header__logo header__logo--light">
+            **Logo**
+        </div>
+        <div class="header__nav-links">
+            <a href="index.html" class="header__nav-links__link header__nav-links__link--active">Home</a>
+            <a href="static/games.html" class="header__nav-links__link">Games</a>
+            <a href="static/movies.html" class="header__nav-links__link">Movies</a>
+            <a href="static/constructor.html" class="header__nav-links__link">ToWatch</a>
+        </div>
+        <form action="#" method="get" class="header__search-form">
+            <input type="text" name="search" placeholder="Search..." class="header__search-form__input">
+            <button type="submit" class="header__search-form__button">Search</button>
+        </form>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="main__content">
+        <section id="home" class="section">
+            <h3 class="section__title">Home</h3>
+            <p>Welcome to RuCritic! Find the best games and movies here.</p>
+        </section>
+        <section id="games" class="section">
+            <h3 class="section__title">Games</h3>
+            <pre class="section__pre">
+   ______
+  / ____/___ _____ ___  ___  _____
+ / / __/ __ `/ __ `__ \/ _ \/ ___/
+/ /_/ / /_/ / / / / / /  __(__  )
+\____/\__,_/_/ /_/ /_/\___/____/
+            </pre>
+            <p>Find best game for you</p>
+            <h3 class="section__title">New Games</h3>
+            <ul class="game-list">
+                <li class="game-list__item">
+                    <img src="images/frostpunk2.jpg" alt="Frostpunk 2" class="game-list__item-img">
+                    <div class="game-list__item-text">Frostpunk 2</div>
+                </li>
+                <li class="game-list__item">
+                    <img src="images/deadrising.jpg" alt="Dead Rising Deluxe Remaster" class="game-list__item-img">
+                    <div class="game-list__item-text">Dead Rising Deluxe Remaster</div>
+                </li>
+                <li class="game-list__item">
+                    <img src="images/arahistory.jpg" alt="Ara: History Untold" class="game-list__item-img">
+                    <div class="game-list__item-text">Ara: History Untold</div>
+                </li>
+            </ul>
+        </section>
+        <section id="movies" class="section">
+            <h3 class="section__title">Movies</h3>
+            <pre class="section__pre">
+                              _
+   ____ ___   ____  _   __   (_)  ___    _____
+  / __ `__ \ / __ \| | / /  / /  / _ \  / ___/
+ / / / / / // /_/ /| |/ /  / /  /  __/ (__  )
+/_/ /_/ /_/ \____/ |___/  /_/   \___/ /____/
+            </pre>
+            <p>Best releases here</p>
+            <h3 class="section__title">New Movies</h3>
+            <ol class="movie-list">
+                <li class="movie-list__item">
+                    <img src="images/thefeatherweight.jpg" alt="The Featherweight" class="movie-list__item-img">
+                    <div class="movie-list__item-text">The Featherweight</div>
+                </li>
+                <li class="movie-list__item">
+                    <img src="images/adifferentman.jpeg" alt="A Different Man" class="movie-list__item-img">
+                    <div class="movie-list__item-text">A Different Man</div>
+                </li>
+                <li class="movie-list__item">
+                    <img src="images/thesubstance.jpg" alt="The Substance" class="movie-list__item-img">
+                    <div class="movie-list__item-text">The Substance</div>
+                </li>
+            </ol>
+        </section>
+    </div>
+    <aside class="aside">
+        <h3 class="aside__title">Recommended</h3>
+        <p>Check out our top recommendations for games and movies.</p>
+        <ul class="aside__list">
+            <li class="aside__list-item"><a href="#" class="aside__list-item-link">Top Game of the Month</a></li>
+            <li class="aside__list-item"><a href="#" class="aside__list-item-link">Top Movie of the Month</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer class="footer">
+    <div>
+        <h3 class="footer__title">Follow us</h3>
+        <div class="footer__text"><a href="index.html" class="footer__link">Telegram</a></div>
+        <div class="footer__text"><a href="index.html" class="footer__link">VK</a></div>
+    </div>
+</footer>
 </body>
 </html>
