@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - RuCritic</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.7.0/validator.min.js"></script>
+    <script src="../scripts/login.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <nav class="header__nav">
+        <div class="header__logo header__logo--light">
+            **Logo**
+        </div>
+        <div class="header__nav-links">
+            <a href="../index.html" class="header__nav-links__link">Home</a>
+            <a href="../static/games.html" class="header__nav-links__link">Games</a>
+            <a href="../static/movies.html" class="header__nav-links__link">Movies</a>
+            <a href="../static/constructor.html" class="header__nav-links__link">ToWatch</a>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="login-form">
+        <h3 class="login-form__title">Login</h3>
+        <form id="loginForm">
+            <div class="form__group">
+                <label for="username" class="form__label">Username</label>
+                <input type="text" id="username" name="username" class="form__input" required>
+            </div>
+            <div class="form__group">
+                <label for="password" class="form__label">Password</label>
+                <input type="password" id="password" name="password" class="form__input" required>
+            </div>
+            <button type="submit" class="form__button">Login</button>
+        </form>
+    </div>
+</main>
+
+<footer class="footer">
+    <div>
+        <h3 class="footer__title">Follow us</h3>
+        <div class="footer__text"><a href="../index.html" class="footer__link">Telegram</a></div>
+        <div class="footer__text"><a href="../index.html" class="footer__link">VK</a></div>
+    </div>
+</footer>
+</body>
+</html>
