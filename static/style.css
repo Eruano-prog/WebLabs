@@ -322,3 +322,47 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.login-form {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form__title {
+    margin-bottom: 20px;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #005bb5;
+}
