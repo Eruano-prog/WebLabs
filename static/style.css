@@ -113,26 +113,29 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow-x: auto; /* Добавляем горизонтальный скролл */
-    white-space: nowrap; /* Предотвращаем перенос элементов на новую строку */
+    overflow-x: auto;
+    width: 100%;
 }
 
 .game-list__item, .movie-list__item {
     margin-right: 20px;
     text-align: center;
+    max-width: 150px;
+    flex: 0 0 auto;
 }
 
 .game-list__item-img, .movie-list__item-img {
-    max-width: 100px;
+    max-width: 100%;
     max-height: 140px;
     border-radius: 5px;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .game-list__item-text, .movie-list__item-text {
-    max-width: 100px;
+    max-width: 100%;
     margin-top: 5px;
     font-size: 14px;
+    word-wrap: break-word;
 }
 
 .footer {
